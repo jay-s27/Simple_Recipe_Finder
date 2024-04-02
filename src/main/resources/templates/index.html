@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipe Finder</title>
+    </head>
+<body>
+    <div class="form">
+        <h2 class="title">Recipe Finder</h2>
+    <form action="#" th:action="@{/recipe}" th:object="${recipe}" method="POST">
+        <label for="title">Search by Title:</label>
+        <input type="text" id="search-title" name="title" th:field="*{title}">
+        <input type="submit" value="Submit"/>
+        
+    </form> 
+    </div> 
+    <style>
+        .form{
+            width:50%;
+            margin:0 auto;
+            margin-left: 35%;
+            margin-top: 20%;
+        }
+        .title{
+            margin-left: 16%;
+        }
+    </style>
+    </body>
+
+    
+</html>

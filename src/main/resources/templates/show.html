@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div class="details">
+  <h2 class="title">Recipe Details</h2>
+  <div class="p">
+    <p th:text="|Name: ${recipe.title}|"/>
+    <p th:text="|Description: ${recipe.instructions}|"/>
+    <p th:text="|Ratings:${recipe.ratings}|"/>
+    <p th:text="|Cooking Time:${recipe.CookingTimeHrs}|"/>
+  </div>
+  </div>
+  <style>
+    .details{
+      margin-left: 35%;
+      margin-top: 10%
+    }
+    .title{
+      margin-left: 15%;
+    }
+    .p{
+      font-size: large;
+    }
+  </style>
+  </body>
+</html>
